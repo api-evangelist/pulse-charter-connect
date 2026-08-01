@@ -1,0 +1,18 @@
+generated: '2026-07-20'
+method: searched
+source: live probes of https://pulsecharterconnect.com/.well-known/*
+host: https://pulsecharterconnect.com
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+notes: No .well-known discovery documents published; llms.txt also 404. Marketing
+  site is served behind a Cloudflare bot challenge (homepage returns HTTP 403 "Just
+  a moment..."), so no developer/API surface is reachable. No pointer wired — nothing found.
